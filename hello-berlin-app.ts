@@ -13,5 +13,5 @@ class HelloBerlin {
 }
 
 bootstrap(HelloBerlin, [
-    GuestService
+  GuestService
 ]);
