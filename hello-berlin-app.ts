@@ -5,14 +5,14 @@ import {GuestService} from 'services/guest-service';
 //import {ROUTER_BINDINGS} from 'angular2/router';
 //import {RouteConfig, RouterOutlet, RouterLink, ROUTER_BINDINGS, ROUTER_DIRECTIVES} from 'angular2/router';
 import {Registration} from 'components/registration';
+import {GuestList} from 'components/guest-list';
 
 import { ROUTER_BINDINGS, LocationStrategy, HashLocationStrategy, RouteConfig, ROUTER_DIRECTIVES } from 'angular2/router';
 
 
 @RouteConfig([
   {path: '/', as: 'registration', component: Registration},
-  //{path: '/list', as: 'list', component: Registration},
-  //{path: '/list', as: 'list', component: GuestList},
+  {path: '/list', as: 'list', component: GuestList},
   //{path: '/search', as: 'search', component: GuestSearch}
 ])
 @Component({

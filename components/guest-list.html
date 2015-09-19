@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col">
+    <h2>Guest list</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div *ng-for="#guest of getList()" class="col s12 m6 l4">
+    <guest-card [guest]="guest"></guest-card>
+  </div>
+</div>
