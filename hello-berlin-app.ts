@@ -1,4 +1,5 @@
 import {Component, View, bootstrap} from 'angular2/angular2'
+import {GuestService} from 'services/guest-service';
 
 @Component({
   selector: 'hello-berlin'
@@ -8,8 +9,9 @@ import {Component, View, bootstrap} from 'angular2/angular2'
 })
 class HelloBerlin {
   constructor() {
-    debugger;
   }
 }
 
-bootstrap(HelloBerlin, []);
+bootstrap(HelloBerlin, [
+    GuestService
+]);

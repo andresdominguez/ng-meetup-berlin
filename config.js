@@ -4,9 +4,10 @@ System.config({
     emitDecoratorMetadata: true
   },
   paths: {
-    typescript: 'lib/typescript.js'
+    'typescript': 'lib/typescript.js',
+    'services/guest-service': 'services/guest-service.ts'
   }
 });
 System.import('hello-berlin-app.ts').catch(function(err) {
-  console.error('Loading failed', err);
+  console.error('Error loading app', err);
 });
