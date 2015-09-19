@@ -15,7 +15,7 @@
     "!./node_modules/**/*.ts"
   ],
   "files": [
-    "./app.ts",
+    "./hello-berlin-app.ts",
     "./typings/angular2/angular2.d.ts",
     "./typings/es6-promise/es6-promise.d.ts",
     "./typings/firebase/firebase.d.ts",

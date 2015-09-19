@@ -7,6 +7,6 @@ System.config({
     typescript: 'lib/typescript.js'
   }
 });
-System.import('app.ts').catch(function(err) {
+System.import('hello-berlin-app.ts').catch(function(err) {
   console.error('Loading failed', err);
 });

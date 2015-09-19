@@ -4,10 +4,11 @@ import {Component, View, bootstrap} from 'angular2/angular2'
   selector: 'hello-berlin'
 })
 @View({
-  templateUrl: 'app.html'
+  templateUrl: 'hello-berlin.html'
 })
 class HelloBerlin {
   constructor() {
+    debugger;
   }
 }
 
