@@ -5,7 +5,8 @@ System.config({
   },
   paths: {
     'typescript': 'lib/typescript.js',
-    'services/guest-service': 'services/guest-service.ts'
+    'services/guest-service': 'services/guest-service.ts',
+    'components/registration': 'components/registration.ts'
   }
 });
 System.import('hello-berlin-app.ts').catch(function(err) {
