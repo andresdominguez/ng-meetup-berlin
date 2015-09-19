@@ -1,0 +1,4 @@
+angular: 2.0.0-alpha.37
+system: 0.19.0
+traceur-runtime: 0.0.91
+typescript: 1.6.2
