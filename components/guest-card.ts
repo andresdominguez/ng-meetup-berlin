@@ -8,7 +8,4 @@ import {Component, View} from 'angular2/angular2';
   templateUrl: 'components/guest-card.html',
 })
 export class GuestCard {
-  guest: any;
-
-  constructor() {}
 }
