@@ -1,14 +1,14 @@
 import {Component, View, bind, bootstrap} from 'angular2/angular2'
 import {GuestService} from 'services/guest-service';
-//import {Router} from 'angular2/router';
-//import {  LocationStrategy, HashLocationStrategy, HTT } from 'angular2/router';
-//import {ROUTER_BINDINGS} from 'angular2/router';
-//import {RouteConfig, RouterOutlet, RouterLink, ROUTER_BINDINGS, ROUTER_DIRECTIVES} from 'angular2/router';
 import {Registration} from 'components/registration';
 import {GuestList} from 'components/guest-list';
-
-import { ROUTER_BINDINGS, LocationStrategy, HashLocationStrategy, RouteConfig, ROUTER_DIRECTIVES } from 'angular2/router';
-
+import {
+    ROUTER_BINDINGS,
+    LocationStrategy,
+    HashLocationStrategy,
+    RouteConfig,
+    ROUTER_DIRECTIVES
+} from 'angular2/router';
 
 @RouteConfig([
   {path: '/', as: 'registration', component: Registration},
@@ -23,10 +23,7 @@ import { ROUTER_BINDINGS, LocationStrategy, HashLocationStrategy, RouteConfig, R
   directives: [ROUTER_DIRECTIVES]
 })
 class HelloBerlin {
-  constructor() {
-  }
 }
-
 
 bootstrap(HelloBerlin, [
   GuestService,
