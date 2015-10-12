@@ -12,8 +12,7 @@ import {
 
 @RouteConfig([
   {path: '/', as: 'registration', component: Registration},
-  {path: '/list', as: 'list', component: GuestList},
-  //{path: '/search', as: 'search', component: GuestSearch}
+  {path: '/list', as: 'list', component: GuestList}
 ])
 @Component({
   selector: 'hello-berlin',

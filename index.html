@@ -21,6 +21,11 @@
 <hello-berlin>Loading ...</hello-berlin>
 
 <script src="config.js"></script>
+<script>
+  System.import('hello-berlin-app.ts').catch(function(err) {
+    console.error('Error loading app', err);
+  });
+</script>
 
 </body>
 </html>

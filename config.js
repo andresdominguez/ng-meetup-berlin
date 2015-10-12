@@ -9,6 +9,3 @@ System.config({
     'components/*': 'components/*.ts'
   }
 });
-System.import('hello-berlin-app.ts').catch(function(err) {
-  console.error('Error loading app', err);
-});
