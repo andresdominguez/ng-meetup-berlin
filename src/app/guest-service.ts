@@ -18,7 +18,7 @@ export class GuestService {
     this.guestList = [];
 
     this.firebase.on('child_added',
-        snapshot => this.guestList.push(this.createGuest(snapshot)),
+        snapshot => this.guestList.unshift(this.createGuest(snapshot)),
         errorObject => console.log('The read failed', errorObject.code)
     );
 
