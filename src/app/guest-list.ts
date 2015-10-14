@@ -1,12 +1,12 @@
 import {Component, NgFor, View} from 'angular2/angular2';
-import {GuestCard} from 'components/guest-card';
-import {GuestService} from 'services/guest-service';
+import {GuestCard} from './guest-card';
+import {GuestService} from './guest-service';
 
 @Component({
   selector: 'guest-list'
 })
 @View({
-  templateUrl: 'components/guest-list.html',
+  templateUrl: 'app/guest-list.html',
   directives: [GuestCard, NgFor]
 })
 export class GuestList {

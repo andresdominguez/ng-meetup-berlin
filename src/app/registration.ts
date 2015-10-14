@@ -1,12 +1,12 @@
 import {Component, View} from 'angular2/angular2';
-import {GuestService} from 'services/guest-service';
+import {GuestService} from './guest-service';
 import {Router} from 'angular2/router';
 
 @Component({
   selector: 'registration'
 })
 @View({
-  templateUrl: 'components/registration.html'
+  templateUrl: 'app/registration.html'
 })
 export class Registration {
   constructor(public guestService: GuestService, public router: Router) {}
@@ -15,6 +15,6 @@ export class Registration {
     event.preventDefault();
 
     this.guestService.add(name, about);
-    this.router.parent.navigate('/list');
+    this.router.navigate(['/GuestList']);
   }
 }
