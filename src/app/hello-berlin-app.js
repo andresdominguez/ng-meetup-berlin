@@ -49,5 +49,9 @@ var HelloBerlin = (function () {
     ], HelloBerlin);
     return HelloBerlin;
 })();
-angular2_1.bootstrap(HelloBerlin, [router_1.ROUTER_BINDINGS, guest_service_1.GuestService]);
+angular2_1.bootstrap(HelloBerlin, [
+    router_1.ROUTER_BINDINGS,
+    guest_service_1.GuestService,
+    angular2_1.provide(router_1.LocationStrategy, { useClass: router_1.HashLocationStrategy })
+]);
 //# sourceMappingURL=hello-berlin-app.js.map

@@ -5,7 +5,7 @@ var GuestService = (function () {
         var _this = this;
         this.firebase = new Firebase(FIREBASE_URL);
         this.guestList = [];
-        this.firebase.on('child_added', function (snapshot) { return _this.guestList.push(_this.createGuest(snapshot)); }, function (errorObject) { return console.log('The read failed', errorObject.code); });
+        this.firebase.on('child_added', function (snapshot) { return _this.guestList.unshift(_this.createGuest(snapshot)); }, function (errorObject) { return console.log('The read failed', errorObject.code); });
         this.firebase.on('child_removed', function (snapshot) {
             var key = snapshot.key();
             _this.guestList = _this.guestList.filter(function (guest) { return guest.key != key; });
